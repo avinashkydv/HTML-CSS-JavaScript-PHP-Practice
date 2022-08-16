@@ -1,0 +1,70 @@
+<html>
+<head>
+    <script src="js/jquery-3.3.1.min.js"> </script>
+<title> Registration </title>
+</head>
+<body style="background-color:blue;background-image: url('1.jpg');">
+<form>
+<center style="font : bold; color: red ; font size: 25px;"> WELCOME TO APJK JAVA COACHING CENTER </center>
+<div style="margin-left:0px;margin-top:0px;height:150px;width:1366px;background-color:green;border:1px red solid;background-image: url('AVIN.jpg');background-size:700px;">
+<div style="margin-left:0px;margin-top:0px;height:150px;width:150px;background-color:red ;float :left; background-image: url('IMG20170111105717.jpg'); background-size:150px;">
+</div>
+<div style="height:150px;width:300px;float:left ;margin-top:00px;">
+<input type="button"value="HOME">
+<input type="button"value="Admin login">
+<input type="button"value="Help">
+<input type="button"value="Sign up">
+</div>
+</div></br>
+<div style="height:400px;width:400px;float:left;margin- top:10px;background-color:green; margin-left:20px;border:1px red solid;background-image: url('who-am-i-png-the-power-of-i-am-1500.png');background-size:400px;">
+<h1 style="font : bold; color: black; font size: 25px;"> Introduction</h1>
+<h2 > HERE YOU CAN LEARN C,C++,JAVA,PYTHON,JAVA SCRIPT,mySQL,WEB DOVELOPMENT,AND MANY THINGS.</h2>
+</div>
+<div style="height:400px;width:400px;float:right;margin- top:10px;background-color:green; margin-right:10px;border:1px red solid;">
+<br>
+<table> 
+ <h3 margine left:30 px; align centre>Registration page</h3> <br>
+<tr><td>User Name:</td><td> <input type="text" name="name" id="user"/></td></tr>
+<tr><td>Password : </td><td><input type="password" name="password" id="pass"/></td></tr>
+<tr><td>Re-Password:</td><td><input type="password"name=password" id="repass"/></td></tr>
+<tr><td>Address : </td><td><input type="text" Address="text" id="address"/></td></tr>
+<tr><td>Mobile number : </td><td><input type="text" name="text" id="mobile"/></td></tr>
+<tr><td>Select one:</td><td>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female</td></tr>
+<tr><td><input type="Submit" value="Submit" id="sub" align="left"/>
+<input type="reset" value="Re-set" align="right"/>
+</td>
+</tr>
+</table>
+</div>
+</form>
+    <script>
+        $("body").ready(function(){
+            $("body").on("click","#sub",function(){
+                    var a= $("#user").val();
+                    
+                    var b= $("#pass").val();
+                    
+                    var c= $("#repass").val();
+                    
+                    var d= $("#address").val();
+                    
+                    var e= $("#mobile").val();
+                    if (a==""){
+                        alert(" !Please write User name ");
+                    }else if(b==""){
+                        alert("! Please Enter Password ");
+                    }else if(c==""){
+                        alert("! Please Re-enter your Password ");
+                    }else if(d==""){
+                        alert("! Please Enter your Address ");
+                    }else if(e==""){
+                        alert("! Please Enter your Mobile number");
+                    }
+                      
+                });
+            });
+    </script>
+</body>
+</html>
